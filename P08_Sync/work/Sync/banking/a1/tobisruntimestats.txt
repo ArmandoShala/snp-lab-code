@@ -1,0 +1,50 @@
+----------------- NOLOCK
+Running 1 threads
+Balance of accounts is: 1006995400
+Balance of accounts is: 1006995400 ... correct
+Run time 1.05s
+
+Running 2 threads
+Balance of accounts is: 1006995400
+Balance of accounts is: 1007489237 ... not correct
+Run time 0.54s
+
+Running 4 threads
+Balance of accounts is: 1006995400
+Balance of accounts is: 1007984215 ... not correct
+Run time 0.39s
+
+
+------------------ AccountLock (Faster)
+Running 1 threads
+Balance of accounts is: 1006995400
+Balance of accounts is: 1006995400 ... correct
+Run time 1.61s
+
+Running 2 threads
+Balance of accounts is: 1006995400
+Balance of accounts is: 1006995400 ... correct
+Run time 0.88s
+
+Running 4 threads
+Balance of accounts is: 1006995400
+Balance of accounts is: 1006995400 ... correct
+Run time 0.57s
+
+
+------------------ BranchLock (Slower)
+
+Running 1 threads
+Balance of accounts is: 1006995400
+Balance of accounts is: 1006995400 ... correct
+Run time 1.58s
+
+Running 2 threads
+Balance of accounts is: 1006995400
+Balance of accounts is: 1006995400 ... correct
+Run time 1.14s
+
+Running 4 threads
+Balance of accounts is: 1006995400
+Balance of accounts is: 1006995400 ... correct
+Run time 0.82s
